@@ -1,0 +1,121 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body
+{
+    /* background-image: linear-gradient(to bottom, #e8f7e2, #ffffff); */
+    background-color:  #e8f7e2;
+    text-decoration: rtl;
+
+}
+
+header
+{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color:  #e8f7e2;
+}
+.inner-header
+{
+ width: 96%;
+ height: 100%;
+ display: block;
+ margin: 10px auto;
+}
+
+.inner-header .left-header,
+.inner-header .center-header,
+.inner-header .right-header
+{
+    display: table;
+    float: left;
+    width: 45%;
+    height: 100%;
+    background-color: #a7ff81;
+
+}
+
+.inner-header .center-header
+{
+    width: 10%;
+}
+
+.inner-header .left-header .upperlines,
+.inner-header .right-header .upperlines
+{
+    display: table-cell;
+    width: 5%;
+    height: 100%;
+    background-color: #afff8c;
+    color: black;
+}
+
+.inner-header .left-header .header-title,
+.inner-header .right-header .header-title
+{    
+    width: 80%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: green;
+    /* background-color: lightblue; */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container
+{
+    background-color: #ffff1f;
+    margin: 20px auto;
+}
+main
+{
+    float: none;
+    padding: 200px;
+    background-color: chartreuse;
+}
+
+.container nav
+{
+    float: right;
+    margin-right: 20px;
+    padding: 50px;
+    /* background-color: red; */
+}
+
+nav .base
+{
+    padding: 50px 0px;
+    background-color: #024000;
+    z-index: 0;
+}
+
+nav .base a,
+nav .base a:hover
+{
+    display: block;
+    z-index: 1;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: rgb(9, 255, 0) solid;
+    background-color: #afff8c;
+    color: green;
+}
+
+nav .base a:hover,
+nav .base .active
+{
+    border: rgb(9, 255, 0) dashed;
+}
+footer
+{
+    background-color: black;
+}
+
