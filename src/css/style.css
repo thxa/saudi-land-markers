@@ -1,0 +1,275 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: #024001;
+}
+
+body
+{
+    /* background-image: linear-gradient(to bottom, #e8f7e2, #ffffff); */
+    background-color:  #e8f7e2;
+    direction: rtl;
+
+}
+
+header
+{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color:  #e8f7e2;
+}
+.inner-header
+{
+ width: 96%;
+ height: 100%;
+ display: block;
+ margin: 10px auto;
+}
+
+.inner-header .left-header,
+.inner-header .center-header,
+.inner-header .right-header
+{
+    display: table;
+    float: left;
+    width: 45%;
+    height: 100%;
+    background-color: #a7ff81;
+
+}
+
+.inner-header .center-header
+{
+    float: left;
+    width: 10%;
+    height: 100%;
+    background-color: #a7ff81;
+
+}
+
+.inner-header .left-header .upperlines,
+.inner-header .right-header .upperlines
+{
+    display: table-cell;
+    width: 5%;
+    height: 100%;
+    background-color: #afff8c;
+}
+
+.inner-header .left-header .header-title,
+.inner-header .right-header .header-title
+{    
+    width: 80%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+/* 
+.search-container
+{
+    
+    float: center;
+    margin: 20px 50px;
+    padding: 10px;
+    border: 1px dashed red;
+}
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #d7d7d7;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+.search-container button:hover {
+    background: #ccc;
+  }
+
+.search-container input[type=text], .search-container button {
+    float: none;
+
+    display: block;
+    text-align: left;
+    width: 60%;
+    margin: 1%  ;
+    padding: 14px;
+  } */
+
+.container
+{
+    /* background-color: #ffff1f; */
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.container nav
+{
+    float: right;
+    margin-right: 20px;
+}
+
+nav .base
+{
+    padding: 25% 0px;
+    background-color: #024000;
+    z-index: 0;
+}
+
+nav .base a,
+nav .base a:hover
+{
+    display: block;
+    z-index: 1;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: rgb(9, 255, 0) solid;
+    background-color: #afff8c;
+    color: green;
+}
+
+nav .base a:hover,
+nav .base .active
+{
+    border: rgb(9, 255, 0) dashed;
+}
+
+.container ul li
+{
+    margin: 1% 25%;
+    font-size: 25px;
+    list-style: circle;
+    color: #024001;
+}
+
+.container p
+{
+    font-size: 32px;
+    margin: 5% 20% 0 10%;
+    color: #024001;
+}
+
+
+
+main
+{
+    display: flex;
+    padding: 10px;
+    margin: 0px 20% 0px 0px;
+    flex-wrap: wrap;
+}
+
+main div
+{
+    border: 2px #ccc dashed;
+    padding: 3px;
+    margin: 10px;
+    width: 25%;
+    height: 100px;
+}
+
+main div a img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.card 
+{
+    margin: 10px 25%;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.card .card-header
+{
+    padding: 10px;
+    margin: 10px 10%;
+    border: 3px green dashed;
+    background-color: #afff8e;
+}
+
+
+
+.card .card-container
+{
+
+    width: 80%;
+    padding: 5px;
+    margin: 20px 60px 0px 0px ;
+    height: 100%;
+    border: 3px green dashed;
+
+    background-color: #e6e6e6;
+ 
+}
+
+
+.card .card-container .image-container
+{
+
+    border: 3px green dotted;
+    margin: 10px;
+    width: 97%;
+    height: 100%;
+}
+
+.card .card-container .image-container img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-container button
+{
+    margin: 0px 10px 0px 0px;
+    border: none;
+    display: inline;
+    background-color: #e6e6e6;
+
+}
+
+.card .card-container button img
+{
+    width: 20px;
+    height: 20px;
+
+}
+
+.card-list
+{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 0, 0);
+}
+
+
+footer
+{
+    /* margin: 0px 20% 0px 0px; */
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+}
+footer img
+{
+    width: 100%;
+    height: 100%;
+}
