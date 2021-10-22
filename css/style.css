@@ -1,3 +1,4 @@
+@import url(./fonts.css);
 *
 {
     padding: 0px;
@@ -5,29 +6,31 @@
     list-style: none;
     text-decoration: none;
     color: #024001;
+    font-family: "Noto Sans Arabic";
 }
 
 body
 {
-    /* background-image: linear-gradient(to bottom, #e8f7e2, #ffffff); */
     background-color:  #e8f7e2;
     direction: rtl;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header
 {
     width: 100%;
     height: 80px;
-    display: block;
     background-color:  #e8f7e2;
 }
 .inner-header
 {
  width: 96%;
  height: 100%;
- display: block;
  margin: 10px auto;
+ box-shadow: 1px 1px 10px green;
+ border-radius: 10px;
+ overflow: hidden;
 }
 
 .inner-header .left-header,
@@ -44,11 +47,8 @@ header
 
 .inner-header .center-header
 {
-    float: left;
     width: 10%;
     height: 100%;
-    background-color: #a7ff81;
-
 }
 
 .inner-header .left-header .upperlines,
@@ -114,32 +114,34 @@ header
 
 .container
 {
+
     /* background-color: #ffff1f; */
+    display: flex;
     margin: 20px auto;
-    padding: 10px;
 }
 
-.container nav
+nav
 {
-    float: right;
-    margin-right: 20px;
+    margin: 50px 20px 0px 0px ;
+    width: 12%;
 }
+
 
 nav .base
 {
-    padding: 25% 0px;
+    padding: 15% 3px;
     background-color: #024000;
-    z-index: 0;
 }
 
 nav .base a,
 nav .base a:hover
 {
-    display: block;
-    z-index: 1;
-    margin: 10px 0;
-    padding: 10px 20px;
+    display: flex;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    text-align: center;
     border: rgb(9, 255, 0) solid;
+    border-radius: 10px;
     background-color: #afff8c;
     color: green;
 }
@@ -147,44 +149,62 @@ nav .base a:hover
 nav .base a:hover,
 nav .base .active
 {
-    border: rgb(9, 255, 0) dashed;
+    border: rgb(9, 255, 0)  dashed;
 }
 
-.container ul li
+main
 {
-    margin: 1% 25%;
-    font-size: 25px;
+    margin: 3% 5% 0px 0px;
+    width: 80%;
+}
+
+main ul li
+{
+    font-size: 32px;
     list-style: circle;
     color: #024001;
 }
 
-.container p
+main p
 {
     font-size: 32px;
-    margin: 5% 20% 0 10%;
     color: #024001;
 }
 
-
-
-main
+.landmark-list
 {
     display: flex;
-    padding: 10px;
-    margin: 0px 20% 0px 0px;
     flex-wrap: wrap;
 }
 
-main div
+.landmark-list .landmark,
+.landmark-list .landmark:hover
 {
     border: 2px #ccc dashed;
     padding: 3px;
     margin: 10px;
     width: 25%;
-    height: 100px;
+    height: 200px;
 }
 
-main div a img
+.landmark-list .landmark:hover
+{
+    border: 2px #ccc solid;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.landmark-list p
+{
+    margin: 0 30% 0 0;
+    font-size: 25px;
+}
+
+.landmark-list .landmark a
+{
+    margin: 0px;
+}
+
+.landmark-list .landmark a img
 {
     width: 100%;
     height: 100%;
@@ -192,10 +212,9 @@ main div a img
 
 .card 
 {
-    margin: 10px 25%;
-    padding: 10px;
-    width: 50%;
-    height: 50%;
+    margin: 0 1% 0 0;
+    width: 70%;
+    height: 20%;
 }
 
 .card .card-header
@@ -207,24 +226,19 @@ main div a img
 }
 
 
-
 .card .card-container
 {
-
     width: 80%;
-    padding: 5px;
-    margin: 20px 60px 0px 0px ;
     height: 100%;
+    margin: 30px 10%;
+    padding: 0;
     border: 3px green dashed;
-
     background-color: #e6e6e6;
- 
 }
 
 
 .card .card-container .image-container
 {
-
     border: 3px green dotted;
     margin: 10px;
     width: 97%;
@@ -241,7 +255,6 @@ main div a img
 {
     margin: 0px 10px 0px 0px;
     border: none;
-    display: inline;
     background-color: #e6e6e6;
 
 }
@@ -253,18 +266,53 @@ main div a img
 
 }
 
-.card-list
+.login-container
 {
+    display: inline-block;
+    width: 80%;
+    margin: 50px 0px 0px 0px;
+    padding: 0 25px;
+}
+
+.login-container a
+{
+    margin-top: 20px;
     padding: 10px;
-    margin: 10px;
-    background-color: rgb(255, 0, 0);
+    border: 1px solid #ccc;
 }
 
 
+.login-container input[type=text],
+.login-container input[type=password], 
+.login-container input[type=email],
+.login-container input:focus
+{
+    width: 95%;
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container input:focus
+{
+    border: 1px solid green;
+    box-shadow: green 1px 1px 1px;
+}
+
+main a,
+main a:hover
+{
+    margin: 0px 20%;
+}
+
+main a:hover
+{
+    text-decoration: underline;
+}
+
 footer
 {
-    /* margin: 0px 20% 0px 0px; */
-    z-index: -1;
     width: 100%;
     height: 200px;
 }
